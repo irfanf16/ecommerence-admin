@@ -1,0 +1,144 @@
+.nav-bdr-bottom {
+    border-bottom: 1px solid #ebeced;
+}
+
+.form-bdr-top {
+    border-top: 5px solid #6574CD;
+}
+
+.alert-close-btn {
+    background-color: #d40000;
+    padding: 0px 7px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+thead {
+    border-bottom: none;
+    color: #001588;
+    background-color: #d0d5f0;
+}
+
+
+/* borders */
+
+.bdr-left-danger5 {
+    border-left: 5px solid #F75554;
+}
+
+.bdr-left-primary5 {
+    border-left: 5px solid #6574CD;
+}
+
+.bdr-left-success5 {
+    border-left: 5px solid #13FF13;
+}
+
+.bdr-left-warning5 {
+    border-left: 5px solid red;
+}
+
+.bdr-left-info5 {
+    border-left: 5px solid #2BCBBA;
+}
+
+.img-bdr-primary {
+    border: 1px solid #ced4da;
+}
+
+.stats-icons {
+    padding: 10px;
+    background-color: #6574cd12;
+    border-radius: 10% !important;
+}
+
+.bg-light-grey {
+    background-color: #F4F5FB;
+}
+/*loader for datatable*/
+.pre-loader{
+    position: absolute;
+    top: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(255,255,255, 0.6);
+    z-index: 900;
+}
+.loader-for-datatable {
+
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    z-index: 999;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: loader-for-datatable 1s ease-in-out infinite alternate;
+    animation: loader-for-datatable 1s ease-in-out infinite alternate;
+
+}
+
+.loader-for-datatable:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 3px solid #09acfd;
+}
+
+.loader-for-datatable:after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 3px solid #09acfd;
+}
+
+@keyframes loader-for-datatable {
+    from {transform: rotate(0deg) scale(1,1);border-radius:0px;}
+    to {transform: rotate(360deg) scale(0, 0);border-radius:50px;}
+}
+@-webkit-keyframes loader-for-datatable {
+    from {-webkit-transform: rotate(0deg) scale(1, 1);border-radius:0px;}
+    to {-webkit-transform: rotate(360deg) scale(0,0 );border-radius:50px;}
+}
+
+
+/*tabs*/
+
+#exTab1 .tab-content {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+}
+
+#exTab2 h3 {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+}
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+    border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+    border-radius: 4px 4px 0 0 ;
+}
+
+#exTab3 .tab-content {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+}

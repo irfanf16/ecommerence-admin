@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "shufo.vscode-blade-formatter",
+        "lonefy.vscode-js-css-html-formatter",
+        "stef-k.laravel-goto-controller"
+    ]
+}

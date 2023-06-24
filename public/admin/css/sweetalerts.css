@@ -1,0 +1,10 @@
+.swal-overlay {
+    background-color: rgba(211 212 212 / 53%);
+}
+
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #6777ef;
+    font-size: 12px;
+}
