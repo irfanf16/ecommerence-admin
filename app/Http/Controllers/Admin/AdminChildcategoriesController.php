@@ -129,6 +129,7 @@ class AdminChildcategoriesController extends Controller
             'subcategory_id' => ['required', 'integer'],
             'title'          => ['required', 'string', 'max:100'],
             'title_ar'          => ['required', 'string', 'max:100'],
+            'title_es'          => ['required', 'string', 'max:100'],
             'description'    => ['max:500'],
         ]);
 
@@ -164,7 +165,7 @@ class AdminChildcategoriesController extends Controller
 
         $response = \Unirest\Request::post($url ,$headers, $body);
 
-		// dd($response);
+
         $status = $response->body->status;
         if ($status == 200) {
 

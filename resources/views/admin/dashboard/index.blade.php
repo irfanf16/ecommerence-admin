@@ -88,44 +88,44 @@
                 </div>
 
                 {{-- Vendors --}}
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card">
-                        <div class="body pb-0">
-                            <a href="{{ URL::to('/admin/vendor/profiles') }}" title="Go to all vendors page">
-                                <div class="row">
-                                    <div class="col-md-8 px-1">
-                                        <h6>Vendors</h6>
-                                        <h2>{{ $vendors_count }}</h2>
-                                    </div>
-                                    {{--                                <div class="col-md-4 px-2">--}}
-                                    {{--                                    <img src="{{ URL::to('admin/images/icons/vendor.svg') }}"--}}
-                                    {{--                                        class="rounded w-100 stats-icons" alt="Vendors Default Image">--}}
-                                    {{--                                </div>--}}
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="col-lg-3 col-md-6 col-sm-12">--}}
+{{--                    <div class="card">--}}
+{{--                        <div class="body pb-0">--}}
+{{--                            <a href="{{ URL::to('/admin/vendor/profiles') }}" title="Go to all vendors page">--}}
+{{--                                <div class="row">--}}
+{{--                                    <div class="col-md-8 px-1">--}}
+{{--                                        <h6>Vendors</h6>--}}
+{{--                                        <h2>{{ $vendors_count }}</h2>--}}
+{{--                                    </div>--}}
+{{--                                    --}}{{--                                <div class="col-md-4 px-2">--}}
+{{--                                    --}}{{--                                    <img src="{{ URL::to('admin/images/icons/vendor.svg') }}"--}}
+{{--                                    --}}{{--                                        class="rounded w-100 stats-icons" alt="Vendors Default Image">--}}
+{{--                                    --}}{{--                                </div>--}}
+{{--                                </div>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
                 {{-- Buyers --}}
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card">
-                        <div class="body pb-0">
-                            <a href="{{ URL::to('/admin/customer/profiles') }}" title="Go to all buyers page">
-                                <div class="row">
-                                    <div class="col-md-8 px-1">
-                                        <h6>Buyers</h6>
-                                        <h2>{{ $buyers_count }}</h2>
-                                    </div>
-                                    {{--                                <div class="col-md-4 px-2">--}}
-                                    {{--                                    <img src="{{ URL::to('admin/images/icons/user.svg') }}"--}}
-                                    {{--                                        class="rounded w-100 stats-icons" alt="Users Default Image">--}}
-                                    {{--                                </div>--}}
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="col-lg-3 col-md-6 col-sm-12">--}}
+{{--                    <div class="card">--}}
+{{--                        <div class="body pb-0">--}}
+{{--                            <a href="{{ URL::to('/admin/customer/profiles') }}" title="Go to all buyers page">--}}
+{{--                                <div class="row">--}}
+{{--                                    <div class="col-md-8 px-1">--}}
+{{--                                        <h6>Buyers</h6>--}}
+{{--                                        <h2>{{ $buyers_count }}</h2>--}}
+{{--                                    </div>--}}
+{{--                                    --}}{{--                                <div class="col-md-4 px-2">--}}
+{{--                                    --}}{{--                                    <img src="{{ URL::to('admin/images/icons/user.svg') }}"--}}
+{{--                                    --}}{{--                                        class="rounded w-100 stats-icons" alt="Users Default Image">--}}
+{{--                                    --}}{{--                                </div>--}}
+{{--                                </div>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
                 {{-- Products --}}
                 <div class="col-lg-3 col-md-6 col-sm-12">
@@ -228,24 +228,24 @@
                 </div>
 
                 {{-- Partners --}}
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card">
-                        <div class="body pb-0">
-                            <a href="{{ URL::to('/admin/partners') }}" title="Go to all Parters page">
-                                <div class="row">
-                                    <div class="col-md-8 px-1">
-                                        <h6>Partners</h6>
-                                        <h2>{{ $partners_count }}</h2>
-                                    </div>
-                                    {{--                                <div class="col-md-4 px-2">--}}
-                                    {{--                                    <img src="{{ URL::to('admin/images/icons/user.svg') }}"--}}
-                                    {{--                                        class="rounded w-100 stats-icons" alt="Users Default Image">--}}
-                                    {{--                                </div>--}}
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="col-lg-3 col-md-6 col-sm-12">--}}
+{{--                    <div class="card">--}}
+{{--                        <div class="body pb-0">--}}
+{{--                            <a href="{{ URL::to('/admin/partners') }}" title="Go to all Parters page">--}}
+{{--                                <div class="row">--}}
+{{--                                    <div class="col-md-8 px-1">--}}
+{{--                                        <h6>Partners</h6>--}}
+{{--                                        <h2>{{ $partners_count }}</h2>--}}
+{{--                                    </div>--}}
+{{--                                    --}}{{--                                <div class="col-md-4 px-2">--}}
+{{--                                    --}}{{--                                    <img src="{{ URL::to('admin/images/icons/user.svg') }}"--}}
+{{--                                    --}}{{--                                        class="rounded w-100 stats-icons" alt="Users Default Image">--}}
+{{--                                    --}}{{--                                </div>--}}
+{{--                                </div>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
         </div>
         {{-- graphs  section --}}

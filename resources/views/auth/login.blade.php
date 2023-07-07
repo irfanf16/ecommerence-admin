@@ -15,7 +15,7 @@
             <div class="vertical-align-middle auth-main">
                 <div class="auth-box">
                     <div class="top">
-                        <img src="{{ URL::to('/admin/images/logos/logo.svg') }}" class="logo-dim" alt="Lucid">
+{{--                        <img src="{{ URL::to('/admin/images/logos/logo.svg') }}" class="logo-dim" alt="Lucid">--}}
                     </div>
 
                     <div class="card">
@@ -50,11 +50,11 @@
                                     </label>
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-lg btn-block">LOGIN</button>
-                                <div class="bottom">
-                                    <span class="helper-text m-b-10"><i class="fa fa-lock"></i> <a
-                                            href="auth-forgot-password.html">Forgot password?</a></span>
-                                    {{-- <span>Don't have an account? <a href="{{URL::to('/register')}}">Register</a></span> --}}
-                                </div>
+{{--                                <div class="bottom">--}}
+{{--                                    <span class="helper-text m-b-10"><i class="fa fa-lock"></i> <a--}}
+{{--                                            href="auth-forgot-password.html">Forgot password?</a></span>--}}
+{{--                                    --}}{{-- <span>Don't have an account? <a href="{{URL::to('/register')}}">Register</a></span> --}}
+{{--                                </div>--}}
                             </form>
                         </div>
                     </div>

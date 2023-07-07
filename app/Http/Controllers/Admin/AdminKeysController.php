@@ -75,6 +75,7 @@ class AdminKeysController extends Controller
         $validator = \Validator::make( $request->all(), [
             'name'       => 'required|string|max:100',
             'name_ar'       => 'required|string|max:100',
+            'name_es'       => 'required|string|max:100',
         ]);
 
         if($validator->fails()){
@@ -163,6 +164,7 @@ class AdminKeysController extends Controller
         $validator = \Validator::make( $request->all(), [
             'name'       => 'required|string|max:100',
             'name_ar'       => 'required|string|max:100',
+            'name_es'       => 'required|string|max:100',
         ]);
 
         if($validator->fails()){

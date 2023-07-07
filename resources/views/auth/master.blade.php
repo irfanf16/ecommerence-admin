@@ -18,7 +18,7 @@
     <!-- Page Loader -->
     <div class="page-loader-wrapper">
         <div class="loader">
-            <div class="m-t-30"><img src="{{ URL::to('/admin/images/favicon/favicon.png') }}" width="48" height="48"
+            <div class="m-t-30"><img src="{{ URL::to('/admin/images/favicon/preloader.svg') }}" width="48" height="48"
                     alt="ArrOw"></div>
             <p>Please wait...</p>
         </div>

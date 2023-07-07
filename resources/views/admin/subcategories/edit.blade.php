@@ -44,17 +44,29 @@
                                         value="{{ $subcategory->title }}" required>
                                 </div>
                             </div>
-                            
+
                             {{-- arabic title  --}}
                             <div class="row mb-3">
                                 <div class="col-md-3">
                                     <label for="title_ar" class="col-form-label">
-                                        <sup class="font-weight-bold text-danger">* </sup> Arabic Title
+                                        <sup class="font-weight-bold text-danger">* </sup> Russian Title
                                     </label>
                                 </div>
                                 <div class="col-md-9">
                                     <input type="text" class="form-control" id="title_ar" name="title_ar"
                                         value="{{ $subcategory->title_ar }}" required>
+                                </div>
+                            </div>
+                            {{-- arabic title  --}}
+                            <div class="row mb-3">
+                                <div class="col-md-3">
+                                    <label for="title_ar" class="col-form-label">
+                                        <sup class="font-weight-bold text-danger">* </sup> Spanish Title
+                                    </label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="title_es" name="title_es"
+                                           value="{{ $subcategory->title_es }}" required>
                                 </div>
                             </div>
 

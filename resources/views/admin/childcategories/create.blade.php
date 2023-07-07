@@ -45,15 +45,26 @@
                             <div class="row mb-3">
                                 <div class="col-md-3">
                                     <label for="title_ar" class="col-form-label">
-                                        <sup class="font-weight-bold text-danger">* </sup>Arabic Title
+                                        <sup class="font-weight-bold text-danger">* </sup>Russian Title
                                     </label>
                                 </div>
                                 <div class="col-md-9">
                                     <input type="text" class="form-control" id="title_ar" name="title_ar" required>
                                 </div>
                             </div>
+                            {{-- arabic title  --}}
+                            <div class="row mb-3">
+                                <div class="col-md-3">
+                                    <label for="title_ar" class="col-form-label">
+                                        <sup class="font-weight-bold text-danger">* </sup>Spanish Title
+                                    </label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="title_es" name="title_es" required>
+                                </div>
+                            </div>
                             {{-- category_id --}}
-                
+
                             <div class="row mb-3 ml-4">
                                 <div class="col-md-3">
                                     <label for="title" class="col-form-label">
@@ -78,7 +89,7 @@
                                     <label for="title" class="col-form-label">
                                         <sup class="font-weight-bold text-danger">* </sup>Subcategory
                                     </label>
-                                    
+
                                 </div>
                                 <div class="col-md-9">
                             <button type="button" class="btn btn-sm btn-primary  float-right d-inline mb-1" data-toggle="modal" data-target="#add-sub"> Add New
@@ -91,7 +102,7 @@
                             </div>
 
                             {{-- Brands --}}
-                         
+
                             <div class="row mb-3">
                                 <div class="col-md-3">
                                     <label for="title" class="col-form-label">
@@ -233,7 +244,7 @@
                 let categoryId = $(this).val();
                 getSubCats(categoryId);
             });
-            
+
         });
     </script>
 

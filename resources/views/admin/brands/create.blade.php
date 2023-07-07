@@ -60,9 +60,17 @@
                             {{-- arabic name  --}}
                             <div class="col-md-12 mb-4">
                                 <label for="name_ar">
-                                    <strong>Arabic Name: <sup class="text-danger">*</sup></strong>
+                                    <strong>Russian Name: <sup class="text-danger">*</sup></strong>
                                 </label>
                                 <input type="text" class="form-control" name="name_ar" id="name_ar" required>
+                            </div>
+
+                            {{-- arabic name  --}}
+                            <div class="col-md-12 mb-4">
+                                <label for="name_ar">
+                                    <strong>Spanish Name: <sup class="text-danger">*</sup></strong>
+                                </label>
+                                <input type="text" class="form-control" name="name_es" id="name_es" required>
                             </div>
                             {{-- brand description --}}
                             <div class="col-md-12 mb-4">

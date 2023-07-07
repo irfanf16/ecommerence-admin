@@ -3,7 +3,8 @@
     <div class="container-fluid px-0">
         <a href="javascript:void(0);" class="menu_toggle"><i class="fa fa-align-left"></i></a>
         <a href="{{ URL::to('/admin/dashboard') }}" class="navbar-brand">
-            <img src="{{ URL::to('/admin/images/favicon/favicon.png') }}" alt="StorakMart" /> <strong>Storak</strong>
+{{--            <img src="{{ URL::to('/admin/images/favicon/favicon.png') }}" alt="StorakMart" />--}}
+            <strong>Admin Panel</strong>
         </a>
         <div id="navbar_main">
             {{-- <ul class="navbar-nav mr-auto hidden-xs">

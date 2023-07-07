@@ -62,10 +62,10 @@
                         @can('admin-vendorstores-read')
                             <li><a href="{{ URL::to('/admin/stores/vendor') }}"><small>Vendor Stores</small></a></li>
                         @endcan
-                        @can('admin-customerstores-read')
-                            <li><a href="{{ URL::to('/admin/stores/customer') }}"><small>Customer Stores</small></a>
-                            </li>
-                        @endcan
+{{--                        @can('admin-customerstores-read')--}}
+{{--                            <li><a href="{{ URL::to('/admin/stores/customer') }}"><small>Customer Stores</small></a>--}}
+{{--                            </li>--}}
+{{--                        @endcan--}}
                     </ul>
                 </li>
             @endif
@@ -223,43 +223,43 @@
                                 <i class="ti-comments"></i><small>Website</small>
                             </a>
                         </li>
-                        <li>
-                            <a href="{{ URL::to('/admin/mobile/covers') }}">
-                                <i class="ti-comments"></i><small>Mobile App</small>
-                            </a>
-                        </li>
+{{--                        <li>--}}
+{{--                            <a href="{{ URL::to('/admin/mobile/covers') }}">--}}
+{{--                                <i class="ti-comments"></i><small>Mobile App</small>--}}
+{{--                            </a>--}}
+{{--                        </li>--}}
                     </ul>
                 </li>
             @endcan
 
             {{-- Partners --}}
-            @can('admin-partners-read')
-                <li class="{{ $navItem == 'partners' ? 'active' : '' }}">
-                    <a href="{{ URL::to('/admin/partners') }}">
-                        <i class="fa-solid fa-handshake-simple"></i>Partners
-                    </a>
-                </li>
-            @endcan
+{{--            @can('admin-partners-read')--}}
+{{--                <li class="{{ $navItem == 'partners' ? 'active' : '' }}">--}}
+{{--                    <a href="{{ URL::to('/admin/partners') }}">--}}
+{{--                        <i class="fa-solid fa-handshake-simple"></i>Partners--}}
+{{--                    </a>--}}
+{{--                </li>--}}
+{{--            @endcan--}}
 
-            @can('admin-usermanagement-read')
-                <li class="{{ $navItem == 'users' ? 'active' : '' }} ">
-                    <a class="has-arrow">
-                        <i class="fas fa-user-cog"></i>
-                        <span>User Management</span>
-                    </a>
-                    <ul>
-                        <li class="{{ request()->is('admin/users') ? 'active' : '' }}">
-                            <a href="{{ URL::to('admin/users') }}">
-                                Manage Users </a>
-                        </li>
+{{--            @can('admin-usermanagement-read')--}}
+{{--                <li class="{{ $navItem == 'users' ? 'active' : '' }} ">--}}
+{{--                    <a class="has-arrow">--}}
+{{--                        <i class="fas fa-user-cog"></i>--}}
+{{--                        <span>User Management</span>--}}
+{{--                    </a>--}}
+{{--                    <ul>--}}
+{{--                        <li class="{{ request()->is('admin/users') ? 'active' : '' }}">--}}
+{{--                            <a href="{{ URL::to('admin/users') }}">--}}
+{{--                                Manage Users </a>--}}
+{{--                        </li>--}}
 
-                        <li class="{{ request()->is('admin/roles') ? 'active' : '' }}">
-                            <a href="{{ URL::to('admin/roles') }}">
-                                Manage Roles </a>
-                        </li>
-                    </ul>
-                </li>
-            @endcan
+{{--                        <li class="{{ request()->is('admin/roles') ? 'active' : '' }}">--}}
+{{--                            <a href="{{ URL::to('admin/roles') }}">--}}
+{{--                                Manage Roles </a>--}}
+{{--                        </li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--            @endcan--}}
 
             {{-- Settings --}}
             @if (\App\Traits\userPermissionCheck::userPermissionCheck('admin-sitesetting-read') ||
@@ -279,14 +279,14 @@
                                 </a>
                             </li>
                         @endcan
-                        @can('admin-appsetting-read')
-                            <li class="{{ $navItem == 'settings' ? 'active' : '' }}">
-                                <a href="{{ route('app.setting') }}">
-                                    {{-- <i class="fa-solid fa-link"></i> --}}
-                                    <small>App Settings</small>
-                                </a>
-                            </li>
-                        @endcan
+{{--                        @can('admin-appsetting-read')--}}
+{{--                            <li class="{{ $navItem == 'settings' ? 'active' : '' }}">--}}
+{{--                                <a href="{{ route('app.setting') }}">--}}
+{{--                                    --}}{{-- <i class="fa-solid fa-link"></i> --}}
+{{--                                    <small>App Settings</small>--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
+{{--                        @endcan--}}
                         @can('admin-securitysetting-read')
                             <li class="{{ $navItem == 'settings' ? 'active' : '' }}">
                                 <a href="{{ route('adminProfile.password') }}">
@@ -308,25 +308,25 @@
                 </li>
             @endif
             {{--            Commissions --}}
-            @can('admin-commission-read')
-                <li class="{{ $navItem == 'commissions' ? 'active' : '' }}">
-                    <a href="javascript:void(0)" class="has-arrow">
-                        <i class="fa-solid fa-sack-dollar"></i>Commissions
-                    </a>
-                    <ul>
-                        <li class="{{ $navItem == 'commissions' ? 'active' : '' }}">
-                            <a href="{{ route('commissions') }}">
-                                <i class="fa-solid fa-bars-staggered"></i><small>Commissions History</small>
-                            </a>
-                        </li>
-                        <li class="{{ $navItem == 'commissions' ? 'active' : '' }}">
-                            <a href="{{ route('commissions.applied') }}">
-                                <i class="fa-regular fa-calendar-check"></i><small>Current commissions</small>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            @endcan
+{{--            @can('admin-commission-read')--}}
+{{--                <li class="{{ $navItem == 'commissions' ? 'active' : '' }}">--}}
+{{--                    <a href="javascript:void(0)" class="has-arrow">--}}
+{{--                        <i class="fa-solid fa-sack-dollar"></i>Commissions--}}
+{{--                    </a>--}}
+{{--                    <ul>--}}
+{{--                        <li class="{{ $navItem == 'commissions' ? 'active' : '' }}">--}}
+{{--                            <a href="{{ route('commissions') }}">--}}
+{{--                                <i class="fa-solid fa-bars-staggered"></i><small>Commissions History</small>--}}
+{{--                            </a>--}}
+{{--                        </li>--}}
+{{--                        <li class="{{ $navItem == 'commissions' ? 'active' : '' }}">--}}
+{{--                            <a href="{{ route('commissions.applied') }}">--}}
+{{--                                <i class="fa-regular fa-calendar-check"></i><small>Current commissions</small>--}}
+{{--                            </a>--}}
+{{--                        </li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--            @endcan--}}
         </ul>
     </nav>
 </div>

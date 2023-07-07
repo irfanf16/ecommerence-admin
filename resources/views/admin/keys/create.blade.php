@@ -43,11 +43,22 @@
                             <div class="row mb-3">
                                 <div class="col-md-3">
                                     <label for="name_ar" class="col-form-label">
-                                        <sup class="font-weight-bold text-danger">* </sup>Arabic Name
+                                        <sup class="font-weight-bold text-danger">* </sup>Russian Name
                                     </label>
                                 </div>
                                 <div class="col-md-9">
                                     <input type="text" class="form-control" id="name_ar" name="name_ar" required>
+                                </div>
+                            </div>
+                            {{-- arabic title  --}}
+                            <div class="row mb-3">
+                                <div class="col-md-3">
+                                    <label for="name_ar" class="col-form-label">
+                                        <sup class="font-weight-bold text-danger">* </sup>Spanish Name
+                                    </label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="name_es" name="name_es" required>
                                 </div>
                             </div>
                             {{-- status --}}

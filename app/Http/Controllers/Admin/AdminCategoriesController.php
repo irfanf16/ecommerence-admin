@@ -104,6 +104,7 @@ class AdminCategoriesController extends Controller
         $validator = \Validator::make( $request->all(), [
             'title'       => ['required', 'string', 'max:100'],
             'title_ar'    => ['required', 'string', 'max:100'],
+            'title_es'    => ['required', 'string', 'max:100'],
             'description' => ['max:500'],
         ]);
 
@@ -221,6 +222,7 @@ class AdminCategoriesController extends Controller
         $validator = \Validator::make( $request->all(), [
             'title'       => ['required', 'string', 'max:100'],
             'title_ar'       => ['required', 'string', 'max:100'],
+            'title_es'       => ['required', 'string', 'max:100'],
             'description' => ['max:500'],
         ]);
 

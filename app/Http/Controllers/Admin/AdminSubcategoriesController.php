@@ -130,6 +130,7 @@ class AdminSubcategoriesController extends Controller
             'category_id' => ['required', 'integer'],
             'title' => ['required', 'string', 'max:100'],
             'title_ar' => ['required', 'string', 'max:100'],
+            'title_es' => ['required', 'string', 'max:100'],
             'description' => ['max:500'],
         ]);
 
@@ -242,6 +243,7 @@ class AdminSubcategoriesController extends Controller
             'category_id' => ['required', 'integer'],
             'title' => ['required', 'string', 'max:100'],
             'title_ar' => ['required', 'string', 'max:100'],
+            'title_es' => ['required', 'string', 'max:100'],
             'description' => ['max:500'],
         ]);
 

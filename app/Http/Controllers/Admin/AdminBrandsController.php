@@ -124,6 +124,7 @@ class AdminBrandsController extends Controller
             // 'category_id' => ['required','integer'],
             'name'        => ['required','string','max:100'],
             'name_ar'        => ['required','string','max:100'],
+            'name_es'        => ['required','string','max:100'],
             'description' => ['string','max:500'],
         ]);
 
@@ -169,7 +170,7 @@ class AdminBrandsController extends Controller
         // $response = \Unirest\Request::post($url ,$headers, Brand::multipart($body));
         $response = Brand::create( Brand::multipart($body) ,  true);
 
-		// dd($response);
+//		 dd($response);
 
         $status = $response->status;
         if ($status == 200) {
@@ -252,6 +253,7 @@ class AdminBrandsController extends Controller
             // 'category_id' => ['required','integer'],
             'name'        => ['required','string','max:100'],
             'name_ar'        => ['required','string','max:100'],
+            'name_es'        => ['required','string','max:100'],
             'description' => ['string','max:500'],
         ]);
 

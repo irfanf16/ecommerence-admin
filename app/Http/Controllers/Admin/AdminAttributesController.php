@@ -113,6 +113,7 @@ class AdminAttributesController extends Controller
         $validator = \Validator::make( $request->all(), [
             'title'       => 'required|string|max:100',
             'title_ar'       => 'required|string|max:100',
+            'title_es'       => 'required|string|max:100',
 
         ]);
 
@@ -209,6 +210,7 @@ class AdminAttributesController extends Controller
         $validator = \Validator::make( $request->all(), [
             'title'       => 'required|string|max:100',
             'title_ar'       => 'required|string|max:100',
+            'title_es'       => 'required|string|max:100',
         ]);
 
         if($validator->fails()){
