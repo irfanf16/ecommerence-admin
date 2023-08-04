@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <title>@yield('title') - Storakmart</title>
+    <title>@yield('title')</title>
 
     <meta name="description"
         content="AppUI is a Web App Bootstrap Admin Template created by pixelcave and published on Themeforest">
