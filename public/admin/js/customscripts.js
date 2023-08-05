@@ -2033,7 +2033,7 @@ function getProducts(page_id) {
                 // status =$('<span/>',{'class':'badge badge-lg badge-pill badge-danger text-uppercase font-weight-bold'}).append('Inactive')
             }
 
-            if (value.featured) {
+            if (value.featured == 1) {
                 product_feature = $('<label/>', {'class': 'toggle-switch'}).append(
                     $('<input/>', {
                         type: 'checkbox',
@@ -2059,7 +2059,7 @@ function getProducts(page_id) {
                 )
                 // status =$('<span/>',{'class':'badge badge-lg badge-pill badge-danger text-uppercase font-weight-bold'}).append('Inactive')
             }
-            if (value.translation_verified) {
+            if (value.translation_verified == 1) {
                 translation_verified = $('<label/>', {'class': 'toggle-switch'}).append(
                     $('<input/>', {
                         type: 'checkbox',
