@@ -324,7 +324,7 @@
                     });
             });
         });
-        p
+
     </script>
 
     @if (session()->has('response'))
