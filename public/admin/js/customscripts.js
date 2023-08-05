@@ -2006,7 +2006,7 @@ function getProducts(page_id) {
         $('#productList').empty()
         $.each(response.data.data, function (index, value) {
 
-            if (value.status) {
+            if (value.status == 1) {
                 product_status = $('<label/>', {'class': 'toggle-switch'}).append(
                     $('<input/>', {
                         type: 'checkbox',
